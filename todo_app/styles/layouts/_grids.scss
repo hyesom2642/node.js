@@ -1,0 +1,36 @@
+/*
+  mobile grids
+
+  1. margin: 14px
+  2. columns: 6개
+  3. gutter: 20px
+  4. units: (100% - 14px * 2) / 6 - 20px
+  5. container: 100% - (14px * 2)
+*/
+
+$margin: 12.5px;
+$columns: 6;
+$gutter: 20px;
+$units: 40px;
+$max-width: 340px;
+
+.container {
+  width: 100%;
+  padding: 0 $margin;
+  margin: 0 auto;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  [class^='col-'] {
+    padding: 0 $gutter/2;
+  }
+
+  @for $i from 1 through $columns {
+    .col-sm-#{$i} {
+      width: percentage($i / $columns);
+    }
+  }
+}
