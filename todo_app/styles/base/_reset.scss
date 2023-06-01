@@ -19,6 +19,7 @@ body {
   font-family: $font-main;
   background-image: url(../../public/images/main-back.png);
   background-repeat: no-repeat;
+  background-color: rgba($white, 0.05);
 }
 
 /* ===== <h1> ~ <h6> ===== */
