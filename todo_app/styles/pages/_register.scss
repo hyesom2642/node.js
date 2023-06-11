@@ -1,0 +1,83 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 211px;
+
+  &-title {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 18px;
+    color: $black;
+    margin-bottom: 13px;
+  }
+
+  &-desc {
+    font-size: 16px;
+    color: #000;
+    opacity: 0.82;
+    margin-bottom: 32px;
+  }
+
+  &-backButton {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 22px;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 61px;
+
+    input {
+      width: 100%;
+      height: 45px;
+      border: 1px solid #eee;
+      border-radius: 100px;
+      padding: 12px 0 12px 26px;
+      margin-bottom: 27px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &::placeholder {
+        color: rgba($black, 0.82);
+      }
+
+      &:focus {
+        border: 2px solid $primary-blue;
+      }
+    }
+  }
+
+  &-submit {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 27px;
+  }
+
+  &-etc {
+    font-size: 16px;
+    color: rgba($black, 0.82);
+
+    a {
+      color: $red;
+      font-weight: 800;
+      transition: opacity 0.3s ease-in-out;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
