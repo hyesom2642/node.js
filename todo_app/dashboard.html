@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <section class="dashboard">
+          <header class="dashboard-header">
+            <h1>dashboard-header</h1>
+            <img class="dashboard-header-profile" src="./public/images/profile.png" alt="유저 프로필 이미지" />
+            <p>
+              Welcome <span class="user-name">Aiony Haust</span>
+            </p>
+            <a class="logout-button" href="/login">Logout</a>
+          </header>
+          <section class="dashboard-body">
+            <span class="time">Good afternoon</span>
+            <div class="clock"></div>
+            <h3 class="task-list-title">Task list</h3>
+            <div class="task-list">
+              <h1 class="title">Daily Tasks</h1>
+              <button class="add-button">
+                <img src="./public/images/plus.png" alt="추가 버튼" />
+              </button>
+              <div class="task-list-body">
+                <div class="item">
+                  <input type="checkbox" class="item-input" />
+                  <span class="item-span">Learn Figma for half day1</span>
+                  <button class="remove-button" type="button">
+                    <img src="./public/images/close image.webp" alt="삭제 이미지" />
+                  </button>
+                </div>
+                <!-- <div class="item">
+                  <input type="checkbox" class="item-input" />
+                  <span class="item-span"></span>
+                  <button class="remove-button" type="button">
+                    <img src="./public/images/close image.webp" alt="삭제 이미지" />
+                  </button>
+                </div> -->
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <form class="modal" action="/add" method="POST">
+    <button type="button" class="close-button">
+      <img src="./public/images/close image.webp" alt="모달창 닫기" />
+    </button>
+    <label for="todo-input">
+      TODO
+    </label>
+    <input id="todo-input" type="text" name="todo" placeholder="Write down your to-do." />
+    <button type="submit" class="todo-add-button primary-button">
+      save
+    </button>
+  </form>
+
+  <script src="./public/js/modal.js"></script>
+  <script src="./public/js/dashboard.js"></script>
+</body>
+</html>
