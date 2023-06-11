@@ -1,0 +1,96 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 154px;
+
+  &-title {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 18px;
+    color: $black;
+    margin-bottom: 23px;
+  }
+
+  &-backButton {
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 22px;
+    transition: opacity 0.3s ease-in-out;
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &-image {
+    display: block;
+    width: 209px;
+    height: 210px;
+    margin-bottom: 24px;
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 34px;
+
+    input {
+      width: 100%;
+      height: 45px;
+      padding: 12px 0 12px 26px;
+      border: 1px solid #eee;
+      border-radius: 100px;
+      margin-bottom: 37px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:focus {
+        border: 2px solid $primary-blue;
+      }
+    }
+  }
+
+  &-findPWLink {
+    font-size: 16px;
+    font-weight: bold;
+    color: $primary-blue;
+    margin-bottom: 30px;
+    transition: opacity 0.3s ease-in-out;
+      
+    &:hover {
+      opacity: 0.7;
+    }
+
+  }
+
+  &-button {
+    margin-bottom: 27px;
+  }
+
+  &-account {
+    font-size: 16px;
+    color: $black;
+
+    a.login-registerLink {
+      font-weight: 800;
+      color: $red;
+      transition: opacity 0.3s ease-in-out;
+      
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
